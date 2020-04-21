@@ -1,7 +1,7 @@
 import logging
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-import auth
+from auth import TOKEN
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -35,7 +35,7 @@ def error(update, context):
 def main():
     """Start the bot."""
 
-    updater = Updater("TOKEN", use_context=True)
+    updater = Updater(token='1240118500:AAHR_N-Xbis4oDy9iHxI6Lms-XYbfNcGhyE', use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
